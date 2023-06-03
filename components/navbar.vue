@@ -4,15 +4,13 @@
 
   <div>
 
-    <nav class="fixed z-40 w-full p-2 nav-bg">
+    <nav class="fixed top-0 z-40 w-full p-2 nav-bg">
       <div class="flex justify-between align-center md:p-3">
         <!-- navbar -->
         <div class="flex justify-between w-full align-middle ">
           <!-- Header logo -->
           <div>
-            <span>
-              Logo
-            </span>
+            <NuxtLink to="/">Wahab</NuxtLink>
           </div>
           <!-- Navbar -->
           <div class="hidden md:block">
@@ -168,7 +166,7 @@ export default {
       </NuxtLink>
     </div>
     <ul class="flex items-center text-lg font-bold sm:mt-2">
-      <li v-for="link in links" :key="link.id" class="my-2  md:mx-3 sm:mb-2">
+      <li v-for="link in links" :key="link.id" class="my-2 md:mx-3 sm:mb-2">
         <NuxtLink :to="link.link" class=" hover:text-gray-300">{{ link.name }}
         </NuxtLink>
       </li>
